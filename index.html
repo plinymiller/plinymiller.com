@@ -3,85 +3,51 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Pliny Miller Design | Web and app design</title>
 <meta name="description" content="Pliny Miller Design is the web and app design studio of B-Tuff LLC.">
 <link rel="canonical" href="https://plinymiller.com/">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="index, follow">
 <meta name="author" content="B-Tuff LLC">
-<meta name="theme-color" content="#000000">
-
+<meta name="theme-color" content="#0E0E0E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pliny Miller Design">
 <meta property="og:title" content="Pliny Miller Design | Web and app design">
-<meta property="og:description" content="The web and app design studio of B-Tuff LLC.">
+<meta property="og:description" content="Pliny Miller Design is the web and app design studio of B-Tuff LLC.">
 <meta property="og:url" content="https://plinymiller.com/">
-<meta property="og:image" content="https://plinymiller.com/pm-mark-512.png">
-<meta property="og:image:alt" content="Pliny Miller Design logo: the letters PM repeated in four bright color panels">
-<meta property="og:locale" content="en_US">
-
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pliny Miller Design | Web and app design">
-<meta name="twitter:description" content="The web and app design studio of B-Tuff LLC.">
-<meta name="twitter:image" content="https://plinymiller.com/pm-mark-512.png">
-
-<meta name="apple-mobile-web-app-title" content="Pliny Miller">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/pm-mark.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://plinymiller.com/#org",
-      "name": "Pliny Miller Design",
-      "alternateName": ["Pliny Miller"],
-      "url": "https://plinymiller.com/",
-      "logo": "https://plinymiller.com/pm-mark-512.png",
-      "description": "Web and app design studio.",
-      "parentOrganization": { "@type": "Organization", "name": "B-Tuff LLC", "url": "https://b-tuff.co/" }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://plinymiller.com/#site",
-      "name": "Pliny Miller Design",
-      "url": "https://plinymiller.com/",
-      "publisher": { "@id": "https://plinymiller.com/#org" }
-    }
-  ]
-}
-</script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Playfair+Display:ital,wght@0,900;1,400;1,800&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
-  html, body { height: 100%; }
-  body { margin: 0; background: #000; color: #fff; font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; display: grid; grid-template-rows: 22vh 56vh 22vh; grid-template-rows: 22svh 56svh 22svh; }
-  header { display: flex; align-items: center; padding: 0 clamp(20px, 4vw, 48px); }
-  h1 { margin: 0; }
-  .logo { display: block; height: clamp(72px, 12vh, 112px); width: auto; }
-  .photo { background: #000 url("pm-sunset-2400.jpg") 30% 78% / cover no-repeat; }
-  footer { display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 0 clamp(20px, 4vw, 48px); }
-  .line { margin: 0; font-size: clamp(1.05rem, 2.2vw, 1.5rem); font-weight: 600; letter-spacing: -0.01em; }
-  .small { margin: 0; font-size: 0.8rem; letter-spacing: 0.04em; color: #a9a9ad; display: flex; flex-wrap: wrap; gap: 2px 1.4em; align-items: baseline; }
-  .small a { color: #d6d6da; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.35); padding: 6px 0 1px; }
-  .small a:hover { color: #fff; border-color: #fff; }
-  .small a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-  @media (max-height: 520px) { body { overflow: auto; grid-template-rows: auto 56svh auto; } header, footer { padding-top: 14px; padding-bottom: 14px; } }
+  html, body { min-height: 100%; }
+  body { margin: 0; background: #0E0E0E; color: #F5F2EA; font: 16px/1.4 "Jost", Futura, "Century Gothic", sans-serif; -webkit-font-smoothing: antialiased; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; padding: clamp(28px, 6.4vw, 92px) clamp(20px, 5.2vw, 76px) clamp(24px, 4.4vw, 64px); }
+  a { color: #F5F2EA; text-decoration: none; }
+  a:focus-visible { outline: 2px solid #E2321B; outline-offset: 4px; }
+  em { font-style: italic; color: #E2321B; font-weight: 800; }
+  .bar { margin-top: auto; border-top: 1px solid #F5F2EA; padding-top: 22px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 14px 40px; }
+  .who { margin: 0; font-size: clamp(0.72rem, 1.1vw, 1rem); letter-spacing: 0.34em; text-transform: uppercase; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px clamp(20px, 2.8vw, 40px); font-size: clamp(0.85rem, 1.18vw, 1.06rem); letter-spacing: 0.2em; text-transform: uppercase; }
+  nav a, .back { border-bottom: 1px solid #E2321B; padding: 8px 0 3px; }
+  nav a:hover, .back:hover, .site:hover { color: #FF8C7A; }
+  .hero { position: relative; }
+  h1 { margin: 0 0 0 -0.035em; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: min(20.1vw, 46vh); font-size: min(20.1vw, 46svh); line-height: 0.8; letter-spacing: -0.045em; text-transform: uppercase; white-space: nowrap; }
+  h1 .l2 { display: block; margin-left: 0.41em; }
+  .tag { position: absolute; right: 0; top: 0.3em; margin: 0; width: 6.6em; text-align: right; font-family: "Playfair Display", Georgia, serif; font-style: italic; font-size: clamp(1.4rem, 2.64vw, 2.4rem); line-height: 1.12; }
+  .bar { padding-bottom: 0; }
+  @media (max-width: 900px) { .tag { position: static; margin-top: 40px; width: auto; text-align: left; font-size: clamp(1.5rem, 6vw, 2.2rem); } body { gap: 48px; } }
 </style>
 </head>
 <body>
-<header>
-  <h1><img class="logo" src="pm-logo-white.svg" width="586" height="200" alt="Pliny Miller Design"></h1>
-</header>
-<main class="photo" role="img" aria-label="Sunset glowing through a line of tall pines"></main>
-<footer>
-  <p class="line">Web and app design.</p>
-  <p class="small"><span>Recent work</span><a href="https://saranaclakeredskins.com/">Saranac Lake Redskins</a><a href="https://prep4me.app/">Prep4Me</a></p>
-  <p class="small"><span>A <a href="https://b-tuff.co/">B-Tuff LLC</a> company</span><a href="https://891consulting.com/">891 Consulting</a><a href="mailto:plinymiller@gmail.com">Contact</a></p>
+<main class="hero">
+  <h1 aria-label="Pliny Miller"><span aria-hidden="true">Pl<em>i</em>ny</span><span class="l2" aria-hidden="true">M<em>i</em>ller</span></h1>
+  <p class="tag">Web and app design.</p>
+</main>
+<footer class="bar">
+  <p class="who">Pliny Miller Design &middot; A B-Tuff LLC company</p>
+  <nav aria-label="Links"><a href="portfolio/">Portfolio</a><a href="https://b-tuff.co/">B-Tuff LLC</a><a href="https://891consulting.com/">891 Consulting</a><a href="mailto:plinymiller@gmail.com">Contact</a></nav>
 </footer>
 </body>
 </html>
