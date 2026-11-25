@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none">
-  <rect width="800" height="560" fill="#231C18"/>
-  <rect x="28" y="28" width="744" height="504" rx="18" stroke="#E6EBEF" stroke-width="8"/>
+  <rect width="800" height="560" fill="#FFF8F3"/>
+  <rect x="28" y="28" width="744" height="504" rx="18" stroke="#B10F24" stroke-width="8"/>
   <rect x="44" y="44" width="712" height="472" rx="10" stroke="#6A7178" stroke-width="3"/>
   <g>
-    <path d="M150 180c-8-30 30-48 70-48h40c40 0 78 18 70 48l16 230c-8 36-70 58-126 58s-118-22-126-58l16-230z" fill="#C4A574" stroke="#F6F0E4" stroke-width="5"/>
-    <path d="M168 196h124" stroke="#9E1224" stroke-width="10" stroke-linecap="round"/>
-    <circle cx="230" cy="300" r="28" fill="#7C0E1C"/>
+    <path d="M150 180c-8-30 30-48 70-48h40c40 0 78 18 70 48l16 230c-8 36-70 58-126 58s-118-22-126-58l16-230z" fill="#C4A574" stroke="#1C1917" stroke-width="5"/>
+    <path d="M168 196h124" stroke="#B10F24" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="230" cy="300" r="28" fill="#8E0E22"/>
   </g>
   <g>
-    <path d="M330 200c-8-30 30-48 70-48h40c40 0 78 18 70 48l16 210c-8 36-70 58-126 58s-118-22-126-58l16-210z" fill="#8C6239" stroke="#F6F0E4" stroke-width="5"/>
-    <path d="M348 216h124" stroke="#FFB703" stroke-width="10" stroke-linecap="round"/>
-    <circle cx="410" cy="312" r="28" fill="#F6F0E4"/>
+    <path d="M330 200c-8-30 30-48 70-48h40c40 0 78 18 70 48l16 210c-8 36-70 58-126 58s-118-22-126-58l16-210z" fill="#8C6239" stroke="#1C1917" stroke-width="5"/>
+    <path d="M348 216h124" stroke="#B10F24" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="410" cy="312" r="28" fill="#1C1917"/>
   </g>
   <g>
-    <path d="M510 168c-8-30 30-48 70-48h40c40 0 78 18 70 48l16 242c-8 36-70 58-126 58s-118-22-126-58l16-242z" fill="#D7C4A3" stroke="#F6F0E4" stroke-width="5"/>
+    <path d="M510 168c-8-30 30-48 70-48h40c40 0 78 18 70 48l16 242c-8 36-70 58-126 58s-118-22-126-58l16-242z" fill="#D7C4A3" stroke="#1C1917" stroke-width="5"/>
     <path d="M528 184h124" stroke="#1A1614" stroke-width="10" stroke-linecap="round"/>
     <circle cx="590" cy="292" r="28" fill="#6A3B22"/>
   </g>
