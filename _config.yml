@@ -1,0 +1,7 @@
+# GitHub Pages builds this site with Jekyll. Do not commit plaintext
+# sample pages. samples/_src is excluded so a mistaken add is not
+# published, and a leading underscore would skip that folder too.
+# Do not add a .nojekyll file at the repository root.
+exclude:
+  - samples/_src
+  - samples/README.md

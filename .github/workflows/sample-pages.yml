@@ -1,0 +1,35 @@
+name: Sample pages stay encrypted
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ciphertext:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gated Kinville HTML is ciphertext
+        run: |
+          set -euo pipefail
+          mapfile -t files < <(find samples/kinville -name '*.html' | sort)
+          test "${#files[@]}" -ge 7
+          for f in "${files[@]}"; do
+            grep -q 'staticryptEncryptedMsgUniqueVariableName' "$f"
+            grep -q '"rememberDurationInDays":30' "$f"
+            grep -q 'id="staticrypt-username"' "$f"
+            grep -q 'id="staticrypt-password"' "$f"
+            grep -q 'Remember me for 30 days' "$f"
+            if grep -q 'class="hero-mark"' "$f"; then
+              echo "plaintext page found in $f" >&2
+              exit 1
+            fi
+            if grep -q 'id="content"' "$f"; then
+              echo "plaintext page found in $f" >&2
+              exit 1
+            fi
+          done
+          grep -q 'href="samples/"' index.html
+          grep -q 'href="kinville/"' samples/index.html
+          test ! -e samples/_src

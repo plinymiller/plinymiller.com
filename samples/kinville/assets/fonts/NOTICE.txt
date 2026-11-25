@@ -1,0 +1,8 @@
+Fonts used by the Kinville sample, under the SIL Open Font License 1.1.
+License texts shipped with these files:
+
+- Bebas Neue — OFL-BebasNeue.txt
+- Outfit — OFL-Outfit.txt
+- Fraunces — OFL-Fraunces.txt
+
+Files are the latin woff2 subsets published by Fontsource (Google Fonts distributions).
