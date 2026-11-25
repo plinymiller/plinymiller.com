@@ -4,7 +4,7 @@ Gated design studies for Pliny Miller Design. The public list is [`samples/index
 
 Each study’s HTML pages are encrypted with [StatiCrypt](https://github.com/robinmoisson/staticrypt) 3.5.4: AES-256-CBC, with a key derived from the passphrase using PBKDF2 (600,000 iterations, the library’s current default). The files committed under `samples/<name>/` are ciphertext plus shared assets (CSS, fonts, drawings). They do not contain the page copy or the password.
 
-This repository is public. Plaintext page source is not stored here, including in git history. For the Kinville study it lives only in the agent store at `/cursor/stores/self/kinville-src/` (page fragments, layout, assets, login template, salt file, and `build.mjs`). Do not copy that directory into the repo. `samples/_src/` must not be added.
+This repository is public. Plaintext page source is not stored here, including in git history. For the Kinville study it lives only in the agent store at `/cursor/stores/self/kinville-src/` (page fragments, layout, assets, login template, salt file, and `build.mjs`). The Tuff Sledding study lives only at `/cursor/stores/self/tuff-sledding-src/`. Do not copy either directory into the repo. `samples/_src/` must not be added.
 
 Passwords are not stored in this repository.
 
@@ -28,6 +28,16 @@ Set `SAMPLE_REPO` if the shell’s current directory is not the repo root.
 
 Commit the updated files under `samples/kinville/` only. Do not commit the private source.
 
+## Re-encrypt Tuff Sledding
+
+From a checkout of this repo:
+
+```
+node /cursor/stores/self/tuff-sledding-src/build.mjs
+```
+
+The script reads the private site in that directory, encrypts every HTML page with one shared salt, and writes only ciphertext and shared assets to `samples/tuff-sledding/`. It reads `SAMPLE_USERNAME` and `SAMPLE_PASSWORD` when those are set, otherwise `/cursor/stores/self/credentials/tuff-sledding-sample.txt`. Remember-me for this sample uses its own browser storage keys, so it does not clear a Kinville sign-in. Commit the files under `samples/tuff-sledding/` only.
+
 Node 20 or newer is required. The first build on a machine needs network access so `npx` can fetch StatiCrypt.
 
 ## Add a sample
@@ -49,5 +59,7 @@ Node 20 or newer is required. The first build on a machine needs network access 
 ## What this repo publishes
 
 `samples/kinville/` is the encrypted study plus the CSS, fonts, and drawings the decrypted pages request. Those assets do not include the written pages or the password. Fonts are Bebas Neue, Outfit, and Fraunces, under the SIL Open Font License.
+
+`samples/tuff-sledding/` is the encrypted Tuff Sledding draft plus the CSS and drawings its pages request. The written pages are not in this repository.
 
 `samples/README.md` is listed in the Jekyll exclude so the site does not serve it. It remains in the git repo and contains no secrets.

@@ -32,4 +32,23 @@ jobs:
           done
           grep -q 'href="samples/"' index.html
           grep -q 'href="kinville/"' samples/index.html
+          grep -q 'href="tuff-sledding/"' samples/index.html
           test ! -e samples/_src
+          mapfile -t tuff < <(find samples/tuff-sledding -name '*.html' | sort)
+          test "${#tuff[@]}" -ge 11
+          for f in "${tuff[@]}"; do
+            grep -q 'staticryptEncryptedMsgUniqueVariableName' "$f"
+            grep -q '"rememberDurationInDays":30' "$f"
+            grep -q 'id="staticrypt-username"' "$f"
+            grep -q 'id="staticrypt-password"' "$f"
+            grep -q 'Remember me for 30 days' "$f"
+            if grep -q 'class="draft-banner"' "$f"; then
+              echo "plaintext page found in $f" >&2
+              exit 1
+            fi
+            if grep -q 'class="wordmark"' "$f"; then
+              echo "plaintext page found in $f" >&2
+              exit 1
+            fi
+          done
+          test ! -e samples/tuff-sledding/README.txt
