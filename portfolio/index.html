@@ -35,6 +35,8 @@
   nav { display: flex; flex-wrap: wrap; gap: 6px clamp(20px, 2.8vw, 40px); font-size: clamp(0.85rem, 1.18vw, 1.06rem); letter-spacing: 0.2em; text-transform: uppercase; }
   nav a, .back { border-bottom: 1px solid #E2321B; padding: 8px 0 3px; }
   nav a:hover, .back:hover, .site:hover { color: #FF8C7A; }
+  .credit { display: flex; flex-direction: column; gap: 8px; }
+  .offices { margin: 0; font-size: clamp(0.65rem, 0.95vw, 0.82rem); letter-spacing: 0.08em; color: rgba(245, 242, 234, 0.7); }
   .top { margin: 0 0 clamp(20px, 3vw, 40px); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px 30px; font-size: clamp(0.8rem, 1.1vw, 1rem); letter-spacing: 0.2em; text-transform: uppercase; }
   .top i { font-family: "Playfair Display", Georgia, serif; font-size: 1.35em; letter-spacing: 0; text-transform: none; }
   h1 { margin: 0 0 0 -0.035em; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: min(13.4vw, 190px); line-height: 0.86; letter-spacing: -0.045em; text-transform: uppercase; }
@@ -61,7 +63,10 @@
   </ol>
 </main>
 <footer class="bar">
-  <p class="who">Pliny Miller Design &middot; a B-Tuff Company &middot; <a href="https://b-tuff.co/">B-Tuff.co</a></p>
+  <div class="credit">
+    <p class="who">Pliny Miller Design &middot; a B-Tuff Company &middot; <a href="https://b-tuff.co/">B-Tuff.co</a></p>
+    <p class="offices">Offices in Saranac Lake NY &amp; Shelburne VT</p>
+  </div>
   <nav aria-label="Links"><a href="../portfolio/">Portfolio</a><a href="https://b-tuff.co/">B-Tuff LLC</a><a href="https://891consulting.com/">891 Consulting</a><a href="mailto:plinymiller@gmail.com">Contact</a></nav>
 </footer>
 </body>

@@ -39,6 +39,8 @@
   h1 { margin: 0 0 0 -0.035em; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: min(20.1vw, 46vh); font-size: min(20.1vw, 46svh); line-height: 0.8; letter-spacing: -0.045em; text-transform: uppercase; white-space: nowrap; }
   h1 .l2 { display: block; margin-left: 0.41em; }
   .tag { position: absolute; right: 0; top: 0.3em; margin: 0; width: 6.6em; text-align: right; font-family: "Playfair Display", Georgia, serif; font-style: italic; font-size: clamp(1.4rem, 2.64vw, 2.4rem); line-height: 1.12; }
+  .credit { display: flex; flex-direction: column; gap: 8px; }
+  .offices { margin: 0; font-size: clamp(0.65rem, 0.95vw, 0.82rem); letter-spacing: 0.08em; color: rgba(245, 242, 234, 0.7); }
   .bar { padding-bottom: 0; }
   @media (max-width: 900px) { .tag { position: static; margin-top: 40px; width: auto; text-align: left; font-size: clamp(1.5rem, 6vw, 2.2rem); } body { gap: 48px; } }
 </style>
@@ -49,7 +51,10 @@
   <p class="tag">Web and app design.</p>
 </main>
 <footer class="bar">
-  <p class="who">Pliny Miller Design &middot; a B-Tuff Company &middot; <a href="https://b-tuff.co/">B-Tuff.co</a></p>
+  <div class="credit">
+    <p class="who">Pliny Miller Design &middot; a B-Tuff Company &middot; <a href="https://b-tuff.co/">B-Tuff.co</a></p>
+    <p class="offices">Offices in Saranac Lake NY &amp; Shelburne VT</p>
+  </div>
   <nav aria-label="Links"><a href="portfolio/">Portfolio</a><a href="https://b-tuff.co/">B-Tuff LLC</a><a href="https://891consulting.com/">891 Consulting</a><a href="mailto:plinymiller@gmail.com">Contact</a></nav>
 </footer>
 </body>
