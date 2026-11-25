@@ -35,6 +35,30 @@
   nav { display: flex; flex-wrap: wrap; gap: 6px clamp(20px, 2.8vw, 40px); font-size: clamp(0.85rem, 1.18vw, 1.06rem); letter-spacing: 0.2em; text-transform: uppercase; }
   nav a, .back { border-bottom: 1px solid #E2321B; padding: 8px 0 3px; }
   nav a:hover, .back:hover, .site:hover { color: #FF8C7A; }
+  h1 .r { position: relative; }
+  a.samples-dot {
+    position: absolute;
+    left: 44.9%;
+    top: 29.8%;
+    width: 22.5%;
+    height: 24.9%;
+    border-radius: 50%;
+    background: transparent;
+    color: transparent;
+    text-decoration: none;
+    cursor: default;
+    z-index: 2;
+  }
+  a.samples-dot:hover,
+  a.samples-dot:focus,
+  a.samples-dot:focus-visible,
+  a.samples-dot:active {
+    background: transparent;
+    color: transparent;
+    outline: none;
+    text-decoration: none;
+    cursor: default;
+  }
   .hero { position: relative; }
   h1 { margin: 0 0 0 -0.035em; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: min(20.1vw, 46vh); font-size: min(20.1vw, 46svh); line-height: 0.8; letter-spacing: -0.045em; text-transform: uppercase; white-space: nowrap; }
   h1 .l2 { display: block; margin-left: 0.41em; }
@@ -47,7 +71,7 @@
 </head>
 <body>
 <main class="hero">
-  <h1 aria-label="Pliny Miller"><span aria-hidden="true">Pl<em>i</em>ny</span><span class="l2" aria-hidden="true">M<em>i</em>ller</span></h1>
+  <h1 aria-label="Pliny Miller"><span aria-hidden="true">Pl<em>i</em>ny</span><span class="l2" aria-hidden="true">M<em>i</em>lle<span class="r">R<a class="samples-dot" href="samples/" tabindex="-1" aria-hidden="true"></a></span></span></h1>
   <p class="tag">Web and app design.</p>
 </main>
 <footer class="bar">
@@ -55,7 +79,7 @@
     <p class="who">Pliny Miller Design &middot; a B-Tuff Company &middot; <a href="https://b-tuff.co/">B-Tuff.co</a></p>
     <p class="offices">Offices in Saranac Lake NY &amp; Shelburne VT</p>
   </div>
-  <nav aria-label="Links"><a href="portfolio/">Portfolio</a><a href="samples/">Samples</a><a href="https://b-tuff.co/">B-Tuff LLC</a><a href="https://891consulting.com/">891 Consulting</a><a href="mailto:plinymiller@gmail.com">Contact</a></nav>
+  <nav aria-label="Links"><a href="portfolio/">Portfolio</a><a href="https://b-tuff.co/">B-Tuff LLC</a><a href="https://891consulting.com/">891 Consulting</a><a href="mailto:plinymiller@gmail.com">Contact</a></nav>
 </footer>
 </body>
 </html>
