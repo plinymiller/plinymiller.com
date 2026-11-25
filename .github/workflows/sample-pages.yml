@@ -30,7 +30,17 @@ jobs:
               exit 1
             fi
           done
-          grep -q 'href="samples/"' index.html
+          grep -q 'class="samples-dot" href="samples/"' index.html
+          grep -q 'tabindex="-1"' index.html
+          grep -q 'aria-hidden="true"' index.html
+          if grep -q '>Samples<' index.html; then
+            echo "visible Samples link still on the homepage" >&2
+            exit 1
+          fi
+          if grep -q 'samples/' portfolio/index.html; then
+            echo "samples link still on the portfolio page" >&2
+            exit 1
+          fi
           grep -q 'href="kinville/"' samples/index.html
           grep -q 'href="tuff-sledding/"' samples/index.html
           test ! -e samples/_src
