@@ -67,16 +67,12 @@ jobs:
           mapfile -t skio < <(find samples/skiology -name '*.html' | sort)
           test "${#skio[@]}" -ge 14
           for f in "${skio[@]}"; do
-            grep -q 'staticryptEncryptedMsgUniqueVariableName' "$f"
-            grep -q '"rememberDurationInDays":30' "$f"
-            grep -q 'id="staticrypt-username"' "$f"
-            grep -q 'id="staticrypt-password"' "$f"
-            grep -q 'Remember me for 30 days' "$f"
-            if grep -q '/samples/skiology/_next/static/chunks/' "$f"; then
-              echo "plaintext page found in $f" >&2
+            if grep -q 'staticryptEncryptedMsgUniqueVariableName' "$f"; then
+              echo "Skiology page is still encrypted: $f" >&2
               exit 1
             fi
           done
+          grep -q '/samples/skiology/_next/static/chunks/' samples/skiology/index.html
           test -d samples/skiology/_next/static
           grep -q 'href="niagara/"' samples/index.html
           test -f samples/niagara/index.html
