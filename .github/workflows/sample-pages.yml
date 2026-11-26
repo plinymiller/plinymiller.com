@@ -62,3 +62,19 @@ jobs:
             fi
           done
           test ! -e samples/tuff-sledding/README.txt
+          test -f .nojekyll
+          grep -q 'href="skiology/"' samples/index.html
+          mapfile -t skio < <(find samples/skiology -name '*.html' | sort)
+          test "${#skio[@]}" -ge 14
+          for f in "${skio[@]}"; do
+            grep -q 'staticryptEncryptedMsgUniqueVariableName' "$f"
+            grep -q '"rememberDurationInDays":30' "$f"
+            grep -q 'id="staticrypt-username"' "$f"
+            grep -q 'id="staticrypt-password"' "$f"
+            grep -q 'Remember me for 30 days' "$f"
+            if grep -q '/samples/skiology/_next/static/chunks/' "$f"; then
+              echo "plaintext page found in $f" >&2
+              exit 1
+            fi
+          done
+          test -d samples/skiology/_next/static

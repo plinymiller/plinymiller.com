@@ -1,0 +1,44 @@
+1:"$Sreact.fragment"
+2:"/samples/skiology/_next/static/chunks/3qfy96eoyh-ek.js"
+3:I[39756,["$2"],"default"]
+4:"/samples/skiology/_next/static/chunks/0msj3pj40xkmo.js"
+5:I[58298,["$2","$4"],"default"]
+6:I[37457,["$2"],"default"]
+7:"/samples/skiology/_next/static/chunks/1jx6my-ynaj9g.js"
+8:"/samples/skiology/_next/static/chunks/0yoomll2zm-5_.js"
+9:I[3020,["$2","$7","$8"],"SiteHeader"]
+a:I[27930,["$2","$7","$8"],"Button"]
+b:I[22016,["$2","$7","$8"],""]
+15:I[68027,["$2"],"default",1]
+:HL["/samples/skiology/_next/static/chunks/3vbvnf9uc3gbv.css","style"]
+:HL["/samples/skiology/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/samples/skiology/_next/static/media/edb99fec956915f8-s.p.32sris142tqlb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+11:X
+12:[["children",{"s":"__PAGE__","h":512,"d":{"r":"$L13","p":false,"v":null}}]]
+f:[["children",{"s":"return","h":512,"d":{"r":"$L10","p":false,"v":"$11"},"c":"$Q12"}]]
+0:{"P":null,"c":["","return",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/samples/skiology/_next/static/chunks/3vbvnf9uc3gbv.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/samples/skiology/_next/static/chunks/3qfy96eoyh-ek.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"wRojWG_variable JGOFDG_variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-background text-foreground","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$5","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/samples/skiology/_next/static/chunks/0msj3pj40xkmo.js","async":true,"nonce":"$undefined"}]],"template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex min-h-full flex-col bg-cream","children":[["$","div",null,{"className":"bg-ink px-4 py-2 text-center text-[11px] tracking-wide text-cream/90","children":"Sales demo for Skiology Ski & Sports · not the shop’s system · fictional guests only · bookings stay in this browser"}],["$","$L9",null,{}],["$","main",null,{"className":"flex-1","children":["$","div",null,{"className":"mx-auto max-w-lg px-4 py-20 text-center","children":[["$","h1",null,{"className":"font-wordmark text-5xl","children":"That trail isn’t marked"}],["$","p",null,{"className":"mt-3 text-sm text-muted-foreground","children":"The page isn’t on this demo."}],["$","$La",null,{"data-slot":"button","className":"group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 gap-1.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 mt-6 h-11 px-4","nativeButton":false,"render":["$","$Lb",null,{"href":"/"}],"children":"Back to the shop"}]]}]}],["$","footer",null,{"className":"mt-auto border-t border-line bg-pine-deep text-cream","children":[["$","div",null,{"className":"mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-3","children":[["$","div",null,{"children":[["$","p",null,{"className":"font-wordmark text-2xl","children":"Skiology"}],["$","p",null,{"className":"mt-2 text-sm text-cream/75","children":["937 Killington Road",["$","br",null,{}],"Killington, VT 05751"]}],["$","p",null,{"className":"mt-2 text-sm text-cream/75","children":"Killington Road at West Hill Road"}],["$","a",null,{"href":"tel:18024227547","className":"mt-3 inline-block text-sm text-cream underline-offset-4 hover:underline","children":"(802) 422-7547"}]]}],["$","div",null,{"children":[["$","p",null,{"className":"text-xs tracking-[0.16em] text-cream/60 uppercase","children":"Counter hours"}],["$","ul",null,{"className":"mt-3 space-y-1 text-sm text-cream/80","children":[["$","li","Monday – Thursday",{"className":"flex justify-between gap-4","children":[["$","span",null,{"children":"Monday – Thursday"}],["$","span",null,{"children":"8:30a – 5:30p"}]]}],["$","li","Friday",{"className":"flex justify-between gap-4","children":[["$","span",null,{"children":"Friday"}],["$","span",null,{"children":"8:30a – 5:30p"}]]}],["$","li","Saturday",{"className":"flex justify-between gap-4","children":[["$","span",null,{"children":"Saturday"}],["$","span",null,{"children":"7:30a – 6:00p"}]]}],["$","li","Sunday",{"className":"flex justify-between gap-4","children":[["$","span",null,{"children":"Sunday"}],["$","span",null,{"children":"7:30a – 5:00p"}]]}]]}]]}],["$","div",null,{"className":"text-sm text-cream/75","children":[["$","p",null,{"children":"Daily rentals, demo skis, junior sets, boots, and a helmet add-on."}],"$Lc","$Ld"]}]]}],"$Le"]}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],"p":false,"v":null},"c":"$Qf"},"h":{"r":"$L14","p":false,"v":null}},"m":"$undefined","G":["$15",["$L16"]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"S0jPy8gudkVohU6_oew9O"}
+17:I[47257,["$2"],"ClientPageRoot"]
+18:"/samples/skiology/_next/static/chunks/22mfz66auelmj.js"
+19:"/samples/skiology/_next/static/chunks/10mk4kgmr4x0e.js"
+1a:"/samples/skiology/_next/static/chunks/3wt1s798qxw81.js"
+1b:I[55184,["$2","$18","$19","$8","$1a"],"default"]
+1e:I[97367,["$2"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+21:"ViewportBoundary"
+22:I[97367,["$2"],"$21"]
+24:"MetadataBoundary"
+25:I[97367,["$2"],"$24"]
+c:["$","p",null,{"className":"mt-2","children":"Tuning on a Wintersteiger. Race center for U12 through academy."}]
+d:["$","p",null,{"className":"mt-4","children":["$","$Lb",null,{"href":"/how-it-works","className":"underline-offset-4 hover:underline","children":"How this desk works"}]}]
+e:["$","div",null,{"className":"border-t border-white/10 px-4 py-4 text-center text-xs text-cream/70","children":["Demo by"," ",["$","a",null,{"href":"https://b-tuff.co","className":"underline-offset-4 hover:underline","children":"B-Tuff LLC"}],". Placeholder wordmark. Not affiliated with Skiology. No real customer data."]}]
+10:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+13:["$","$1","c",{"children":[["$","$L17",null,{"Component":"$1b","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@1c","$@1d"]}}],[["$","script","script-0",{"src":"/samples/skiology/_next/static/chunks/22mfz66auelmj.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/samples/skiology/_next/static/chunks/10mk4kgmr4x0e.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/samples/skiology/_next/static/chunks/0yoomll2zm-5_.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/samples/skiology/_next/static/chunks/3wt1s798qxw81.js","async":true,"nonce":"$undefined"}]],["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]]}]
+14:["$","$1","h",{"children":[null,["$","$L22",null,{"children":"$L23"}],["$","$L25",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1f",null,{"name":"Next.Metadata","children":"$L26"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+16:["$","link","0",{"rel":"stylesheet","href":"/samples/skiology/_next/static/chunks/3vbvnf9uc3gbv.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+11:C
+1c:{}
+1d:"$13:props:children:0:props:serverProvidedParams:params"
+23:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+27:I[27201,["$2"],"IconMark"]
+20:null
+26:[["$","title","0",{"children":"Skiology rentals"}],["$","meta","1",{"name":"description","content":"Sales demo of an online ski and snowboard rental desk for a Killington shop. Built by B-Tuff LLC. Not affiliated with Skiology. No real customer data."}],["$","link","2",{"rel":"icon","href":"/samples/skiology/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/samples/skiology/icon.svg?icon.2s5fezzvkf99l.svg","sizes":"any","type":"image/svg+xml"}],["$","$L27","4",{}]]
