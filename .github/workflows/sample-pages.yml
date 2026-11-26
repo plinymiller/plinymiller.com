@@ -79,27 +79,13 @@ jobs:
           done
           test -d samples/skiology/_next/static
           grep -q 'href="niagara/"' samples/index.html
-          mapfile -t niag < <(find samples/niagara -name '*.html' | sort)
-          test "${#niag[@]}" -ge 1
-          for f in "${niag[@]}"; do
-            grep -q 'staticryptEncryptedMsgUniqueVariableName' "$f"
-            grep -q '"rememberDurationInDays":30' "$f"
-            grep -q 'id="staticrypt-username"' "$f"
-            grep -q 'id="staticrypt-password"' "$f"
-            grep -q 'Remember me for 30 days' "$f"
-            if grep -q 'id="workbench"' "$f"; then
-              echo "plaintext page found in $f" >&2
-              exit 1
-            fi
-            if grep -q 'proportionalConstant' "$f"; then
-              echo "plaintext page found in $f" >&2
-              exit 1
-            fi
-            if grep -q 'kitControl:LoopPoint' "$f"; then
-              echo "plaintext page found in $f" >&2
-              exit 1
-            fi
-          done
+          test -f samples/niagara/index.html
+          if grep -q 'staticryptEncryptedMsgUniqueVariableName' samples/niagara/index.html; then
+            echo "Niagara page is still encrypted" >&2
+            exit 1
+          fi
+          grep -q 'id="workbench"' samples/niagara/index.html
+          grep -q 'proportionalConstant' samples/niagara/index.html
           test ! -e samples/niagara/styles.css
           test ! -e samples/niagara/sim.js
           test ! -e samples/niagara/main.js
