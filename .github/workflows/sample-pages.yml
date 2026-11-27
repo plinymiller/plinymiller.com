@@ -76,12 +76,24 @@ jobs:
           test -d samples/skiology/_next/static
           grep -q 'href="niagara/"' samples/index.html
           test -f samples/niagara/index.html
-          if grep -q 'staticryptEncryptedMsgUniqueVariableName' samples/niagara/index.html; then
-            echo "Niagara page is still encrypted" >&2
+          grep -q 'staticryptEncryptedMsgUniqueVariableName' samples/niagara/index.html
+          grep -q '"rememberDurationInDays":30' samples/niagara/index.html
+          grep -q 'id="staticrypt-username"' samples/niagara/index.html
+          grep -q 'id="staticrypt-password"' samples/niagara/index.html
+          grep -q 'Remember me for 30 days' samples/niagara/index.html
+          grep -q 'AES-GCM' samples/niagara/index.html
+          if grep -q 'id="workbench"' samples/niagara/index.html; then
+            echo "plaintext page found in samples/niagara/index.html" >&2
             exit 1
           fi
-          grep -q 'id="workbench"' samples/niagara/index.html
-          grep -q 'proportionalConstant' samples/niagara/index.html
+          if grep -q 'proportionalConstant' samples/niagara/index.html; then
+            echo "plaintext page found in samples/niagara/index.html" >&2
+            exit 1
+          fi
+          if grep -q 'AES-CBC' samples/niagara/index.html; then
+            echo "Niagara page is not AES-GCM" >&2
+            exit 1
+          fi
           test ! -e samples/niagara/styles.css
           test ! -e samples/niagara/sim.js
           test ! -e samples/niagara/main.js
