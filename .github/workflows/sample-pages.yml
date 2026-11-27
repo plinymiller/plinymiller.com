@@ -64,16 +64,24 @@ jobs:
           test ! -e samples/tuff-sledding/README.txt
           test -f .nojekyll
           grep -q 'href="skiology/"' samples/index.html
-          mapfile -t skio < <(find samples/skiology -name '*.html' | sort)
-          test "${#skio[@]}" -ge 14
-          for f in "${skio[@]}"; do
+          for f in \
+            samples/skiology/index.html \
+            samples/skiology/book/index.html \
+            samples/skiology/how-it-works/index.html \
+            samples/skiology/r/index.html \
+            samples/skiology/staff/index.html
+          do
+            test -f "$f"
             if grep -q 'staticryptEncryptedMsgUniqueVariableName' "$f"; then
               echo "Skiology page is still encrypted: $f" >&2
               exit 1
             fi
           done
-          grep -q '/samples/skiology/_next/static/chunks/' samples/skiology/index.html
-          test -d samples/skiology/_next/static
+          grep -q "Killington's Specialty Ski Shop" samples/skiology/index.html
+          grep -q '802-422-SKIS' samples/skiology/index.html
+          grep -q 'id="reserve-form"' samples/skiology/book/index.html
+          test -d samples/skiology/images
+          test ! -d samples/skiology/_next
           grep -q 'href="niagara/"' samples/index.html
           test -f samples/niagara/index.html
           if grep -q 'staticryptEncryptedMsgUniqueVariableName' samples/niagara/index.html; then
